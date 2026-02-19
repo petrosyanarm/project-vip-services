@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --color-primary: rgba(0, 57, 104, 1);
+  --color-secondary: rgba(147, 152, 166, 1);
+  --breakpoint-3xl: 90rem;
+}
+
+@layer utilities {
+  h1 {
+    @apply text-primary font-bold text-[32px] lg:text-6xl leading-[100%];
+  }
+  h2 {
+    @apply text-primary font-bold text-[32px] lg:text-[54px] leading-[100%];
+  }
+  h3 {
+    @apply text-primary font-bold text-[48px] leading-11.5;
+  }
+  h4 {
+    @apply text-primary font-semibold text-[36px] leading-[100%];
+  }
+  h5 {
+    @apply text-primary font-semibold text-[28px] leading-[100%];
+  }
+  h6 {
+    @apply font-semibold text-base lg:text-xl leading-[100%];
+  }
+  .swiper-pagination-bullet {
+    @apply !bg-primary;
+  }
+  .swiper-pagination {
+    @apply !static;
+  }
+  .swiper-pagination-bullet-active {
+    @apply !w-[42px] !rounded-[26px];
+  }
+}
